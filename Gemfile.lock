@@ -1,0 +1,31 @@
+PATH
+  remote: .
+  specs:
+    josufst_palindrome (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    builder (3.2.4)
+    minitest (5.14.1)
+    minitest-reporters (1.2.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    rake (10.5.0)
+    ruby-progressbar (1.10.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  josufst_palindrome!
+  minitest (~> 5.0)
+  minitest-reporters (= 1.2.0)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.6
