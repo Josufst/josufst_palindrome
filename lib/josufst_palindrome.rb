@@ -15,10 +15,14 @@ module JosufstPalindrome
 
     # Returns content for palindrome testing.
     def processed_content
-      scan(/[a-z]/i).join.downcase
+      to_s.scan(/[a-z\d]/i).join.downcase
     end
 end
 
 class String
+  include JosufstPalindrome
+end
+
+class Integer
   include JosufstPalindrome
 end
