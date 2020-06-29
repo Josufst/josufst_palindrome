@@ -1,10 +1,14 @@
 require "josufst_palindrome/version"
 
-class String
+module JosufstPalindrome
 
   # Returns true for a palindrome, false otherwise.
   def palindrome?
-    processed_content == processed_content.reverse
+    if processed_content.empty?
+      false
+    else
+      processed_content == processed_content.reverse
+    end
   end
 
   private
@@ -13,4 +17,8 @@ class String
     def processed_content
       scan(/[a-z]/i).join.downcase
     end
+end
+
+class String
+  include JosufstPalindrome
 end
